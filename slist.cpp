@@ -21,7 +21,7 @@ int main(){
  students.push_back(jake);
  vector<student>::iterator ptr;
  cout << "The vector elements are : ";
- for (ptr = students.begin(); ptr < students.end(); ptr++){
+ for (ptr = students.cbegin(); ptr < students.cend(); ptr++){
         cout << *ptr << " ";
  }
 }
