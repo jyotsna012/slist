@@ -15,23 +15,14 @@ struct student{
 
 };
 
-char name[50];
-cin >> name;
-
-void printl(char* c){
-
-  int i = 0;
-  while(c[i] != '\0'){
-  cout << c[i];
-  i++;
-  }
-
-}
-
-printl(name);
-
+void printl(char* c);
 
 int main(){
+  
+  char name[50];
+  cin >> name;
+  
+  printl(name);
 
   cout << "Welcome to the Student List." << endl;
   cout << "You can ADD, PRINT, DELETE, or QUIT" << endl;
@@ -70,5 +61,17 @@ int main(){
   }
 
 }
+
+void printl(char* c){
+    
+    int i = 0;
+    while(c[i] != '\0'){
+      cout << c[i];
+      i++;
+    }
+}
+
+
+
 
 
