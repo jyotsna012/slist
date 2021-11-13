@@ -18,7 +18,7 @@ int main(){
 
   cout << "Welcome to the Student List." << endl;
   
-  while(0){
+  while(1){
   
     cout << "What would you like to do?" << endl;
     cout << "You can ADD, PRINT, DELETE, or QUIT" << endl;
