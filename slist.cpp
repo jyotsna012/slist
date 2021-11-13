@@ -13,7 +13,6 @@ void printl(char* c);
 //student *ptr_student;
 //ptr_student = &jake;
 
-vector<student> students;
 
 void add(vector<student> &vect){
   student new;
@@ -36,6 +35,8 @@ int main(){
     //float gpa;
 
   };
+  
+  vector<student> students;
   
   char name[50];
   cin >> name;
