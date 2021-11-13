@@ -20,22 +20,6 @@ int main(){
   cout << "DELETE = 2" << endl;
   cout << "QUIT = 3" << endl;
     
-  int choice;
-  cin >> choice;
-    
-  if(choice == 0){
-    cout << choice << endl;
-  }
-  if(choice == 1){
-    cout << choice << endl;
-  }
-  if(choice == 2){
-    cout << choice << endl;
-  }
-  if(choice == 3){
-    cout << choice << endl;
-  }
-    
 }
 
 
