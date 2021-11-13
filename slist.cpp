@@ -8,14 +8,6 @@ using namespace std;
 
 void printl(char* c);
 
-struct student{
-
-  //char fname[100];
-  //char lname[100];
-  int sID;
-  //float gpa;
-
-};
 
 //student jake;
 //student *ptr_student;
@@ -35,6 +27,15 @@ void add(vector<student> &vect){
 
 
 int main(){
+  
+  struct student{
+    
+    //char fname[100];
+    //char lname[100];
+    int sID;
+    //float gpa;
+
+  };
   
   char name[50];
   cin >> name;
