@@ -19,7 +19,7 @@ char name[50];
 cin.get(name, 50);
 cin.get();
 
-void print(char* c){
+void printl(char* c){
 
   int i = 0;
   while(c[i] != '\0'){
@@ -29,7 +29,7 @@ void print(char* c){
 
 }
 
-print(name);
+printl(name);
 
 
 int main(){
