@@ -16,7 +16,7 @@ vector<student*> students;
 int main(){
 
   
- students* jake = new student;
+ student* jake = new student;
   
  jake->sID=8;
  cout<<"ID: "<<(jake->sID)<<endl;   
