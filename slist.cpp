@@ -16,8 +16,7 @@ struct student{
 };
 
 char name[50];
-cin.get(name, 50);
-cin.get();
+cin >> name;
 
 void printl(char* c){
 
