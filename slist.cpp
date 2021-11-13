@@ -15,9 +15,22 @@ struct student{
 
 };
 
-vector<student*> studentlist;
+char name[50];
+cin.get(name, 50);
+cin.get();
 
-vector<student> addStudent(vector<student>, )
+void print(char* c){
+
+  int i = 0;
+  while(c[i] != '\0'){
+  cout << c[i];
+  i++;
+  }
+
+}
+
+print(name);
+
 
 int main(){
 
