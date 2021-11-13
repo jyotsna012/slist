@@ -21,7 +21,7 @@ int main(){
  students.push_back(jake);
  for(vector<student>::iterator it = students.begin(); it != students.end(); it++){
  
-  cout << it.sID << endl;
+  cout << it->sID << endl;
  }
   
 }
