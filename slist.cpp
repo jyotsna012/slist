@@ -10,14 +10,16 @@ using namespace std;
 struct student{
   int sID;
 };
-  
-std::vector<student*> students;
+vector<student*> students;
+
 
 int main(){
 
+  
  students* jake = new student;
- jake.sID=8;
- cout<<"ID: "<<(jake.sID)<<endl;   
+  
+ jake->sID=8;
+ cout<<"ID: "<<(jake->sID)<<endl;   
  students.push_back(jake);
  
  cout << "Welcome to the Student List." << endl;
