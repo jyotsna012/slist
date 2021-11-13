@@ -13,8 +13,6 @@ struct student{
   
 std::vector<student*> students;
 
-    a* pA = new a;
-
 int main(){
 
  students* jake = new student;
