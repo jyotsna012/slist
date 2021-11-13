@@ -41,8 +41,8 @@ int main(){
   if(choice == 0){
   }
   if(choice == 1){  
-     for(vector<student*>::iterator it = students.begin(); it != students.end(); it++){
-         cout << *it->sID << endl;
+     for(vector<student>*::iterator it = students.begin(); it != students.end(); it++){
+         cout << it->sID << endl;
      }
   }
   if(choice == 2){  
