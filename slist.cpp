@@ -11,11 +11,13 @@ struct student{
   int sID;
 };
   
-vector<student*> students;
+std::vector<student*> students;
+
+    a* pA = new a;
 
 int main(){
 
- struct student jake;
+ students* jake = new student;
  jake.sID=8;
  cout<<"ID: "<<(jake.sID)<<endl;   
  students.push_back(jake);
