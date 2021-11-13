@@ -10,13 +10,18 @@ struct student{
   int sID;
 };
   
+vector<student> students;
 
 int main(){
 
  struct student jake;
  jake.sID=8;
- cout<<"ID: "<<(jake.sID)<<endl;    
-
+ cout<<"ID: "<<(jake.sID)<<endl;   
+ vect.push_back(jake);
+ for(auto & elem : students)
+    {
+        cout<<elem<<", ";
+    }
 }
 
 /*void printl(char* c);
