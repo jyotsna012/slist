@@ -6,16 +6,33 @@
 
 using namespace std;
 
+void printl(char* c);
+
 struct student{
 
-  char fname[100];
-  char lname[100];
+  //char fname[100];
+  //char lname[100];
   int sID;
-  float gpa;
+  //float gpa;
 
 };
 
-void printl(char* c);
+student jake;
+student *ptr_student;
+ptr_student = &jake;
+
+vector<student> students;
+
+void add(vector<student> &vect){
+  student new;
+  new.sID = 123;
+  vect.push_back(new);
+  for(auto & elem : students)
+    {
+        cout<<elem<<", ";
+    }
+}
+
 
 int main(){
   
@@ -45,7 +62,7 @@ int main(){
     cin >> choice;
 
     if(choice == 0){
-      
+       add(student);
     }
     if(choice == 1){
       
