@@ -6,7 +6,20 @@
 
 using namespace std;
 
-void printl(char* c);
+struct student{
+  int sID;
+};
+  
+
+int main(){
+
+struct student new;
+new.sID=8;
+cout<<"ID: "<<(new.ID)<<endl;    
+
+}
+
+/*void printl(char* c);
 
 
 //student jake;
@@ -99,7 +112,7 @@ void printl(char* c){
       c[i] = 'e';
       cout << c[i];
       i++;
-}
+}*/
 
 
 
