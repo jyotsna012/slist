@@ -2,6 +2,7 @@
 #include <ctime>
 #include <cstdlib>
 #include <cstring>
+#include <vector>
 
 using namespace std;
 
@@ -13,6 +14,10 @@ struct student{
   float gpa;
 
 };
+
+vector<student*> studentlist;
+
+vector<student> addStudent(vector<student>, )
 
 int main(){
 
@@ -37,13 +42,13 @@ int main(){
     cin >> choice;
 
     if(choice == 0){
-      cout << choice << endl;
+      
     }
     if(choice == 1){
-      cout << choice << endl;
+      
     }
     if(choice == 2){
-      cout << choice << endl;
+      
     }
     if(choice == 3){
       loop = 1;
