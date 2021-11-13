@@ -11,7 +11,7 @@ struct student{
   int sID;
 };
   
-vector<student> students;
+vector<student*> students;
 
 int main(){
 
@@ -39,7 +39,7 @@ int main(){
   if(choice == 0){
   }
   if(choice == 1){  
-     for(vector<student>::iterator it = students.begin(); it != students.end(); it++){
+     for(vector<student*>::iterator it = students.begin(); it != students.end(); it++){
          cout << it->sID << endl;
      }
   }
