@@ -5,7 +5,7 @@ using namespace std;
    int width, height;      
       
  };      
-int main(void) {    
+int main() {    
     struct Rectangle rec;    
     rec.width=8;    
     rec.height=5;    
