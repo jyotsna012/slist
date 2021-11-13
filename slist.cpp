@@ -46,7 +46,7 @@ int main(){
       cout << choice << endl;
     }
     if(choice == 3){
-      break;
+      //break;
     }
     
   }
