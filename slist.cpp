@@ -5,15 +5,6 @@
 
 using namespace std;
 
-struct student{
-
-  char fname[100];
-  char lname[100];
-  int sID;
-  float gpa;
-  
-};
-
 int main(){
 
   cout << "Welcome to the Student List." << endl;
@@ -45,6 +36,15 @@ int main(){
   if(choice == 3){
     cout << choice << endl;
   }
+  
+  struct student{
+
+  char fname[100];
+  char lname[100];
+  int sID;
+  float gpa;
+  
+};
     
 }
 
