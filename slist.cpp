@@ -17,8 +17,9 @@ struct student{
 int main(){
 
   cout << "Welcome to the Student List." << endl;
+  int loop = 1;
   
-  while(1){
+  while(loop == 1){
   
     cout << "What would you like to do?" << endl;
     cout << "You can ADD, PRINT, DELETE, or QUIT" << endl;
