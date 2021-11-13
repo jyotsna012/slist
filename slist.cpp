@@ -19,9 +19,10 @@ int main(){
  jake.sID=8;
  cout<<"ID: "<<(jake.sID)<<endl;   
  students.push_back(jake);
- vector<student>::iterator ptr;
- cout << "The vector elements are : " << endl;
- cout << students[0];
+ for(vector<string>::iterator it = students = students.begin(); it != students.end(); it++){
+ 
+  cout << *it << endl;
+ }
   
 }
 
