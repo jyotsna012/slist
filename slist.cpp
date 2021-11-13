@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <cstring>
 #include <vector>
+#include <iterator>
 
 using namespace std;
 
@@ -18,6 +19,11 @@ int main(){
  jake.sID=8;
  cout<<"ID: "<<(jake.sID)<<endl;   
  students.push_back(jake);
+ vector<student>::iterator ptr;
+ cout << "The vector elements are : ";
+ for (ptr = students.begin(); ptr < students.end(); ptr++){
+        cout << *ptr << " ";
+ }
 }
 
 /*void printl(char* c);
