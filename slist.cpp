@@ -17,7 +17,7 @@ int main(){
  struct student jake;
  jake.sID=8;
  cout<<"ID: "<<(jake.sID)<<endl;   
- vect.push_back(jake);
+ students.push_back(jake);
  for(auto & elem : students)
     {
         cout<<elem<<", ";
