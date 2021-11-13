@@ -17,9 +17,9 @@ struct student{
 
 };
 
-student jake;
-student *ptr_student;
-ptr_student = &jake;
+//student jake;
+//student *ptr_student;
+//ptr_student = &jake;
 
 vector<student> students;
 
