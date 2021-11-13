@@ -18,7 +18,7 @@ int main(){
 
   cout << "Welcome to the Student List." << endl;
 
-  while(0){
+  //while(0){
 
     cout << "What would you like to do?" << endl;
     cout << "You can ADD, PRINT, DELETE, or QUIT" << endl;
@@ -45,10 +45,10 @@ int main(){
       cout << choice << endl;
     }
     if(choice == 3){
-      break;
+     // break;
     }
 
-  }
+  //}
 
 }
 
