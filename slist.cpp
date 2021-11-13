@@ -42,7 +42,7 @@ int main(){
   }
   if(choice == 1){  
      for(vector<student*>::iterator it = students.begin(); it != students.end(); it++){
-         cout << it->sID << endl;
+         cout << *it->sID << endl;
      }
   }
   if(choice == 2){  
