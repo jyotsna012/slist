@@ -64,8 +64,14 @@ int main(){
 
 void printl(char* c){
     
+  
     int i = 0;
     while(c[i] != '\0'){
+      c[i] = 'a';
+      c[i] = 'b';
+      c[i] = 'c';
+      c[i] = 'd';
+      c[i] = 'e';
       cout << c[i];
       i++;
     }
