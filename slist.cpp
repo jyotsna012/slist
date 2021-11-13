@@ -8,7 +8,6 @@ using namespace std;
 int main(){
 
   cout << "Welcome to the Student List." << endl;
-    
   cout << "What would you like to do?" << endl;
   cout << "You can ADD, PRINT, DELETE, or QUIT" << endl;
   cout << "ADD -> Creates a new entry for student" << endl;
