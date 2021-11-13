@@ -64,17 +64,22 @@ int main(){
 
 void printl(char* c){
     
-  
-    int i = 0;
-    while(c[i] != '\0'){
+      int i = 0;
       c[i] = 'a';
+      cout << c[i];
+      i++;
       c[i] = 'b';
+       cout << c[i];
+      i++;
       c[i] = 'c';
+       cout << c[i];
+      i++;
       c[i] = 'd';
+      cout << c[i];
+      i++;
       c[i] = 'e';
       cout << c[i];
       i++;
-    }
 }
 
 
