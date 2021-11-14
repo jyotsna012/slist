@@ -45,7 +45,7 @@ void print(vector<student*> &vect){
 
 }
 
-void delete(vector<student*> &vect){
+void sdelete(vector<student*> &vect){
   
   int studentId;
   int position;
@@ -91,7 +91,7 @@ int main(){
     print(students);
   }
   if(choice == 2){  
-    delete(students);
+    sdelete(students);
   }
   if(choice == 3){
     loop = 1;
