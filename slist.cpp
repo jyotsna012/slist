@@ -32,8 +32,8 @@ void add(vector<student*> vect){
   cin >> studentGPA;
   
   student* jake = new student; 
-  jake->studentFirstName=studentFirstName;
-  jake->studentLastName=studentLastName;
+  strcpy(jake->studentFirstName=studentFirstName);
+  strcpy(jstudentLastName=studentLastName);
   jake->studentId=studentId;
   jake->studentGPA=studentGPA;
 
