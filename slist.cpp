@@ -18,32 +18,33 @@ vector<student*> students;
 
 void add(vector<student*> vect){
 
+  student* newStudent = new student; 
   char studentFirstName[25];
   char studentLastName[25];
   int  studentId;
   float studentGPA;
   cout << "What is the first name of the student" << endl;
-  cin.get(studentFirstName,25);
+  cin >> newStudent->studentFirstName;
   cout << "What is the last name of the student" << endl;
-  cin.get(studentLastName,25);
+  cin >> newStudent->lastName;
   cout << "What is the Student ID" << endl;
-  cin >> studentId;
+  cin >> newStudent->studentId;
   cout << "What is the students GPA" << endl;
-  cin >> studentGPA;
+  cin >> newStudent->studentGPA;
   
   //cout<<studentLastName<<endl;
   
-  student* jake = new student; 
-  strcpy(jake->studentFirstName=studentFirstName);
-  strcpy(jake->studentLastName=studentLastName);
+  
+  /*strcpy(newStudent->studentFirstName=studentFirstName);
+  strcpy(newStudent->studentLastName=studentLastName);
   jake->studentId=studentId;
-  jake->studentGPA=studentGPA;
+  jake->studentGPA=studentGPA;*/
 
-  cout<<"First Name: "<<(jake->studentFirstName)<<endl;
-  cout<<"Last Name: "<<(jake->studentLastName)<<endl;   
-  cout<<"ID: "<<(jake->studentId)<<endl;   
-  cout<<"GPA: "<<(jake->studentGPA)<<endl;   
-  students.push_back(jake);
+  cout<<"First Name: "<<(newStudent->studentFirstName)<<endl;
+  cout<<"Last Name: "<<(newStudent->studentLastName)<<endl;   
+  cout<<"ID: "<<(newStudent->studentId)<<endl;   
+  cout<<"GPA: "<<(newStudent->studentGPA)<<endl;   
+  vect.push_back(newStudent);
   
 }
 
