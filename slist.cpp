@@ -26,7 +26,7 @@ void add(vector<student*> vect){
   cout << "What is the first name of the student" << endl;
   cin >> newStudent->studentFirstName;
   cout << "What is the last name of the student" << endl;
-  cin >> newStudent->lastName;
+  cin >> newStudent->studentLastName;
   cout << "What is the Student ID" << endl;
   cin >> newStudent->studentId;
   cout << "What is the students GPA" << endl;
