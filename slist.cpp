@@ -58,6 +58,7 @@ void sdelete(vector<student*> &vect){
     if((*it)->studentId == studentId){
      cout<< "pos" << position<<endl;
      vect.erase(it);
+      (*it)=nullpointer;
      break;
    
    }
