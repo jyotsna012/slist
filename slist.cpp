@@ -34,6 +34,17 @@ void add(vector<student*> &vect){
   vect.push_back(newStudent);
 }
 
+void print(vector<student*> &vect){
+  
+    for(vector<student*>::iterator it = students.begin(); it != students.end(); it++){
+         cout<<"First Name: "<<(*it)->studentFirstName << endl;
+         cout<<"Last Name: "<<(*it)->studentLastName << endl;
+         cout<<"ID: "<<(*it)->studentId << endl;  
+         cout<<"GPA: "<<(*it)->studentGPA << endl;
+     }
+
+}
+
 int main(){
 
  cout << "Welcome to the Student List." << endl;
@@ -56,15 +67,7 @@ int main(){
     add(students);
   }
   if(choice == 1){  
-  
-    cout << "count" << students.size() << endl;
-    for(vector<student*>::iterator it = students.begin(); it != students.end(); it++){
-         cout<<"First Name: "<<(*it)->studentFirstName << endl;
-         cout<<"Last Name: "<<(*it)->studentLastName << endl;
-         cout<<"ID: "<<(*it)->studentId << endl;  
-         cout<<"GPA: "<<(*it)->studentGPA << endl;
-     }
-    
+    print(students);
   }
   if(choice == 2){  
   }
