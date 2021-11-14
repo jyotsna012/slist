@@ -64,6 +64,8 @@ void sdelete(vector<student*> &vect){
   
   }
   
+  vect.erase(position);
+  
 }
 
 int main(){
