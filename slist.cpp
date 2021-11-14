@@ -31,7 +31,9 @@ void add(vector<student*> vect){
   cout << "What is the students GPA" << endl;
   cin >> studentGPA;
   
-  student* jake = new student; 
+  cout<<studentLastName<<endl;
+  
+  /*student* jake = new student; 
   strcpy(jake->studentFirstName=studentFirstName);
   strcpy(jake->studentLastName=studentLastName);
   jake->studentId=studentId;
@@ -41,7 +43,7 @@ void add(vector<student*> vect){
   cout<<"Last Name: "<<(jake->studentLastName)<<endl;   
   cout<<"ID: "<<(jake->studentId)<<endl;   
   cout<<"GPA: "<<(jake->studentGPA)<<endl;   
-  students.push_back(jake);
+  students.push_back(jake);*/
   
 }
 
