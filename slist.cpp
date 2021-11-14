@@ -31,21 +31,7 @@ void add(vector<student*> vect){
   cin >> newStudent->studentId;
   cout << "What is the students GPA" << endl;
   cin >> newStudent->studentGPA;
-  
-  //cout<<studentLastName<<endl;
-  
-  
-  /*strcpy(newStudent->studentFirstName=studentFirstName);
-  strcpy(newStudent->studentLastName=studentLastName);
-  jake->studentId=studentId;
-  jake->studentGPA=studentGPA;*/
-
-  cout<<"First Name: "<<(newStudent->studentFirstName)<<endl;
-  cout<<"Last Name: "<<(newStudent->studentLastName)<<endl;   
-  cout<<"ID: "<<(newStudent->studentId)<<endl;   
-  cout<<"GPA: "<<(newStudent->studentGPA)<<endl;   
   vect.push_back(newStudent);
-  
 }
 
 int main(){
@@ -70,9 +56,13 @@ int main(){
     add(students);
   }
   if(choice == 1){  
-     //for(vector<student*>::iterator it = students.begin(); it != students.end(); it++){
-        // cout << (*it)->studentId << endl;
-     //}
+  
+     for(vector<student*>::iterator it = students.begin(); it != students.end(); it++){
+         cout<<"First Name: "<<(*it)->studentFirstName << endl;
+         cout<<"Last Name: "<<(*it)->studentLastName << endl;
+         cout<<"ID: "<<(*it)->studentId << endl;  
+         cout<<"GPA: "<<(*it)->studentGPA << endl;
+     }
   }
   if(choice == 2){  
   }
