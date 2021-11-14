@@ -91,6 +91,7 @@ int main(){
     print(students);
   }
   if(choice == 2){  
+    delete(students);
   }
   if(choice == 3){
     loop = 1;
