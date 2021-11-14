@@ -8,10 +8,42 @@
 using namespace std;
 
 struct student{
-  int sID;
+  char studentFirstName[25];
+  char studentLastName[25];
+  int  studentId;
+  float studentGPA;
 };
 vector<student*> students;
 
+
+void add(vector<student*> vect){
+
+  char studentFirstName[25];
+  char studentLastName[25];
+  int  studentId;
+  float studentGPA;
+  cout << "What is the first name of the student" << endl;
+  cin.get(studentFirstName,25);
+  cout << "What is the last name of the student" << endl;
+  cin.get(studentLastName,25);
+  cout << "What is the Student ID" << endl;
+  cin >> studentID;
+  cout << "What is the students GPA" << endl;
+  cin >> studentGPA;
+  
+  student* jake = new student; 
+  jake->studentFirstName=studentFirstName;
+  jake->studentLastName=studentLastName;
+  jake->studentID=studentID;
+  jake->studentGPA=studentGPA;
+
+  cout<<"First Name: "<<(jake->studentFirstName)<<endl;
+  cout<<"Last Name: "<<(jake->studentLastName)<<endl;   
+  cout<<"ID: "<<(jake->studentId)<<endl;   
+  cout<<"GPA: "<<(jake->studentGPA)<<endl;   
+  students.push_back(jake);
+  
+}
 
 int main(){
 
@@ -19,7 +51,7 @@ int main(){
  student* jake = new student;
   
  jake->sID=8;
- cout<<"ID: "<<(jake->sID)<<endl;   
+ cout<<"ID: "<<(jake->studentId)<<endl;   
  students.push_back(jake);
  
  cout << "Welcome to the Student List." << endl;
@@ -39,11 +71,12 @@ int main(){
   int choice;
   cin >> choice;
   if(choice == 0){
+    add(students);
   }
   if(choice == 1){  
-     for(vector<student*>::iterator it = students.begin(); it != students.end(); it++){
-         cout << (*it)->sID << endl;
-     }
+     //for(vector<student*>::iterator it = students.begin(); it != students.end(); it++){
+        // cout << (*it)->studentId << endl;
+     //}
   }
   if(choice == 2){  
   }
