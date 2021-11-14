@@ -57,12 +57,14 @@ int main(){
   }
   if(choice == 1){  
   
-     for(vector<student*>::iterator it = students.begin(); it != students.end(); it++){
+    cout << students.size() << endl;
+    for(vector<student*>::iterator it = students.begin(); it != students.end(); it++){
          cout<<"First Name: "<<(*it)->studentFirstName << endl;
          cout<<"Last Name: "<<(*it)->studentLastName << endl;
          cout<<"ID: "<<(*it)->studentId << endl;  
          cout<<"GPA: "<<(*it)->studentGPA << endl;
      }
+    
   }
   if(choice == 2){  
   }
