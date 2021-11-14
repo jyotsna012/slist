@@ -33,7 +33,7 @@ void add(vector<student*> vect){
   
   student* jake = new student; 
   strcpy(jake->studentFirstName=studentFirstName);
-  strcpy(jstudentLastName=studentLastName);
+  strcpy(jake->studentLastName=studentLastName);
   jake->studentId=studentId;
   jake->studentGPA=studentGPA;
 
