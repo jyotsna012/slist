@@ -16,7 +16,7 @@ struct student{
 vector<student*> students;
 
 
-void add(vector<student*> vect){
+void add(vector<student*> &vect){
 
   student* newStudent = new student; 
   char studentFirstName[25];
