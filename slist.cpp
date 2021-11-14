@@ -57,7 +57,7 @@ int main(){
   }
   if(choice == 1){  
   
-    cout << students.size() << endl;
+    cout << "count" << students.size() << endl;
     for(vector<student*>::iterator it = students.begin(); it != students.end(); it++){
          cout<<"First Name: "<<(*it)->studentFirstName << endl;
          cout<<"Last Name: "<<(*it)->studentLastName << endl;
