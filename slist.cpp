@@ -45,6 +45,27 @@ void print(vector<student*> &vect){
 
 }
 
+void delete(vector<student*> &vect){
+  
+  int studentId;
+  int position;
+  cout << "enter the student ID of the student to be removed" << endl;
+  cin >> studentId;
+  
+  for(vector<student*>::iterator it = students.begin(); it != students.end(); it++){
+  
+    position++;
+   if((*it)->studentId == studentId){
+     cout<< "pos" << position<<endl;
+     break;
+   
+   }
+    
+  
+  }
+  
+}
+
 int main(){
 
  cout << "Welcome to the Student List." << endl;
