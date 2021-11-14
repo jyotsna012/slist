@@ -27,14 +27,14 @@ void add(vector<student*> vect){
   cout << "What is the last name of the student" << endl;
   cin.get(studentLastName,25);
   cout << "What is the Student ID" << endl;
-  cin >> studentID;
+  cin >> studentId;
   cout << "What is the students GPA" << endl;
   cin >> studentGPA;
   
   student* jake = new student; 
   jake->studentFirstName=studentFirstName;
   jake->studentLastName=studentLastName;
-  jake->studentID=studentID;
+  jake->studentId=studentId;
   jake->studentGPA=studentGPA;
 
   cout<<"First Name: "<<(jake->studentFirstName)<<endl;
@@ -47,13 +47,6 @@ void add(vector<student*> vect){
 
 int main(){
 
-  
- student* jake = new student;
-  
- jake->sID=8;
- cout<<"ID: "<<(jake->studentId)<<endl;   
- students.push_back(jake);
- 
  cout << "Welcome to the Student List." << endl;
  cout << "You can ADD, PRINT, DELETE, or QUIT" << endl;
  cout << "ADD -> Creates a new entry for student" << endl;
