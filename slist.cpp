@@ -23,6 +23,7 @@ void add(vector<student*> &vect){
   char studentLastName[25];
   int  studentId;
   float studentGPA;
+  
   cout << "What is the first name of the student" << endl;
   cin >> newStudent->studentFirstName;
   cout << "What is the last name of the student" << endl;
@@ -30,7 +31,10 @@ void add(vector<student*> &vect){
   cout << "What is the Student ID" << endl;
   cin >> newStudent->studentId;
   cout << "What is the students GPA" << endl;
-  cin >> newStudent->studentGPA;
+  cin >> studentGPA;
+  float value = (int)(studentGPA * 100 + .5);
+  float newGPA = (float)value / 100;
+  newStudent->studentGPA = newGPA;
   vect.push_back(newStudent);
 }
 
@@ -58,12 +62,8 @@ void sdelete(vector<student*> &vect){
     if((*it)->studentId == studentId){
      cout<< "pos" << position<<endl;
      vect.erase(it);
-      (*it)=nullpointer;
      break;
-   
    }
-    
-  
   }
  
   
